@@ -1033,25 +1033,42 @@ h2::after {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        background: rgba(248, 250, 252, 0.9);
-        padding: var(--spacing-md);
+        width: 100vw;
+        background: rgba(248, 250, 252, 0.97);
         flex-direction: column;
         gap: var(--spacing-md);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
         backdrop-filter: blur(15px);
         border-bottom-left-radius: var(--border-radius);
         border-bottom-right-radius: var(--border-radius);
+        padding: var(--spacing-md) 0;
+        z-index: 2000;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
     }
-
     .nav-links.active {
         display: flex;
+        max-height: 500px;
+        opacity: 1;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
     }
-
+    .nav-links a {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        border-radius: 0;
+        border-bottom: 1px solid #e5e7eb;
+        background: none;
+        text-align: left;
+    }
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
     .hamburger {
         display: block;
+        z-index: 2100;
     }
-
     .hero {
         padding-top: 4.5rem;
     }
@@ -1371,3 +1388,4 @@ h2::after {
         font-size: 1rem;
     }
 }
+
