@@ -1138,6 +1138,74 @@ h2::after {
     }
 }
 
+@media (max-width: 600px) {
+    .hero {
+        padding: 2rem 0.5rem 1.5rem 0.5rem;
+    }
+    .about,
+    .services,
+    .testimonials,
+    .contact {
+        padding: 2rem 0.5rem 1.5rem 0.5rem;
+    }
+    .service-card,
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+    .service-card img,
+    .testimonial-card .quote-icon {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .why-us-highlight,
+    .contact-info-block {
+        padding: 1.2rem 0.7rem;
+        max-width: 98vw;
+    }
+    .compare-erps-grid {
+        gap: 1rem;
+    }
+    .compare-card {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .footer {
+        padding: 1.2rem 0.5rem;
+    }
+    .footer p {
+        font-size: 1rem;
+    }
+    .footer a {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    .modal-content {
+        max-width: 98vw;
+        width: 98vw;
+        min-width: unset;
+        padding: 1rem;
+        font-size: 1rem;
+        overflow-y: auto;
+        max-height: 90vh;
+    }
+    .close-btn {
+        top: 8px;
+        right: 8px;
+        font-size: 1.2rem;
+    }
+    .cta-button,
+    .learn-more-btn,
+    .submit-button {
+        font-size: 1rem;
+        padding: 0.7em 1.2em;
+    }
+    input,
+    textarea,
+    select {
+        font-size: 1rem;
+    }
+}
+
 /* Accessibility */
 :focus {
     outline: none;
