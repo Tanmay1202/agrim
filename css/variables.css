@@ -1,0 +1,39 @@
+:root {
+    /* Colors */
+    --primary-dark: #1A2A44; /* Deep navy blue for a professional look */
+    --primary-light: #FFFFFF; /* Crisp white for clean backgrounds */
+    --secondary-gray: #E5E7EB; /* Light gray for subtle backgrounds */
+    --accent-teal: #2B6CB0; /* Muted teal for professional accents */
+    --accent-teal-hover: #1E4976; /* Darker teal for hover states */
+    --text-light: #FFFFFF; /* White for text on dark backgrounds */
+    --text-dark: #1F2937; /* Dark gray for text on light backgrounds */
+    --text-muted: #6B7280; /* Muted gray for secondary text */
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, #1A2A44 0%, #2E3B55 100%); /* Navy gradient for hero */
+    --gradient-button: linear-gradient(90deg, #2B6CB0 0%, #1E4976 100%); /* Teal gradient for buttons */
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+    /* Transitions */
+    --transition: all 0.3s ease-in-out;
+
+    /* Border Radius */
+    --border-radius-sm: 6px;
+    --border-radius: 12px;
+
+    /* Spacing */
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+
+    /* Typography */
+    --font-size-h1: 3.5rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.5rem;
+    --font-size-body: 1.1rem;
+}
