@@ -251,43 +251,8 @@ const chooseErpModalTemplate = `
 `;
 
 if (chooseErpCard) {
-    const learnMoreBtn = document.createElement('button');
-    learnMoreBtn.classList.add('learn-more-btn');
-    learnMoreBtn.textContent = 'Learn More';
-    chooseErpCard.appendChild(learnMoreBtn);
-
-    learnMoreBtn.addEventListener('click', () => {
-        document.body.insertAdjacentHTML('beforeend', chooseErpModalTemplate);
-
-        const modal = document.getElementById('choose-erp-modal');
-        modal.style.display = 'flex';
-
-        const closeBtn = modal.querySelector('.close-btn');
-        closeBtn.addEventListener('click', () => {
-            modal.remove();
-        });
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.remove();
-            }
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal) {
-                modal.remove();
-            }
-        });
-
-        // Form Submission Handler for Choose ERP Form
-        const erpForm = modal.querySelector('.choose-erp-form');
-        erpForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your submission! Our team will reach out to help you find the perfect ERP solution.');
-            erpForm.reset();
-            modal.remove();
-        });
-    });
+    // Remove the learn more button creation and event listener
+    // The form will be handled separately if needed
 }
 
 // IntersectionObserver for Scroll Animations
