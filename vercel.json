@@ -1,14 +1,14 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/((?!api).*)",
       "has": [
         {
           "type": "host",
           "value": "theagrim.com"
         }
       ],
-      "destination": "https://www.theagrim.com/:1",
+      "destination": "https://www.theagrim.com/$1",
       "permanent": true
     }
   ],
