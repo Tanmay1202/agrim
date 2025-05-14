@@ -80,35 +80,35 @@ const serviceDetails = [
 serviceCards.forEach((card, index) => {
     const learnMoreBtn = card.querySelector('.learn-more-btn');
     if (learnMoreBtn) {
-        learnMoreBtn.addEventListener('click', () => {
-            const details = serviceDetails[index];
-            const modalHtml = serviceModalTemplate
-                .replace('{title}', details.title)
-                .replace('{description}', details.description)
-                .replace('{benefits}', details.benefits.map(benefit => `<li>${benefit}</li>`).join(''));
+    learnMoreBtn.addEventListener('click', () => {
+        const details = serviceDetails[index];
+        const modalHtml = serviceModalTemplate
+            .replace('{title}', details.title)
+            .replace('{description}', details.description)
+            .replace('{benefits}', details.benefits.map(benefit => `<li>${benefit}</li>`).join(''));
 
-            document.body.insertAdjacentHTML('beforeend', modalHtml);
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
 
-            const modal = document.getElementById('service-modal');
-            modal.style.display = 'flex';
+        const modal = document.getElementById('service-modal');
+        modal.style.display = 'flex';
 
-            const closeBtn = modal.querySelector('.close-btn');
-            closeBtn.addEventListener('click', () => {
-                modal.remove();
-            });
-
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.remove();
-                }
-            });
-
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal) {
-                    modal.remove();
-                }
-            });
+        const closeBtn = modal.querySelector('.close-btn');
+        closeBtn.addEventListener('click', () => {
+            modal.remove();
         });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.remove();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal) {
+                modal.remove();
+            }
+        });
+    });
     }
 });
 
@@ -136,29 +136,29 @@ const whyUsModalTemplate = `
 if (whyUsCard) {
     const learnMoreBtn = whyUsCard.querySelector('.learn-more-btn');
     if (learnMoreBtn) {
-        learnMoreBtn.addEventListener('click', () => {
-            document.body.insertAdjacentHTML('beforeend', whyUsModalTemplate);
+    learnMoreBtn.addEventListener('click', () => {
+        document.body.insertAdjacentHTML('beforeend', whyUsModalTemplate);
 
-            const modal = document.getElementById('why-us-modal');
-            modal.style.display = 'flex';
+        const modal = document.getElementById('why-us-modal');
+        modal.style.display = 'flex';
 
-            const closeBtn = modal.querySelector('.close-btn');
-            closeBtn.addEventListener('click', () => {
-                modal.remove();
-            });
-
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.remove();
-                }
-            });
-
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal) {
-                    modal.remove();
-                }
-            });
+        const closeBtn = modal.querySelector('.close-btn');
+        closeBtn.addEventListener('click', () => {
+            modal.remove();
         });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.remove();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal) {
+                modal.remove();
+            }
+        });
+    });
     }
 }
 
@@ -186,29 +186,29 @@ const whatIsErpModalTemplate = `
 if (whatIsErpCard) {
     const learnMoreBtn = whatIsErpCard.querySelector('.learn-more-btn');
     if (learnMoreBtn) {
-        learnMoreBtn.addEventListener('click', () => {
-            document.body.insertAdjacentHTML('beforeend', whatIsErpModalTemplate);
+    learnMoreBtn.addEventListener('click', () => {
+        document.body.insertAdjacentHTML('beforeend', whatIsErpModalTemplate);
 
-            const modal = document.getElementById('what-is-erp-modal');
-            modal.style.display = 'flex';
+        const modal = document.getElementById('what-is-erp-modal');
+        modal.style.display = 'flex';
 
-            const closeBtn = modal.querySelector('.close-btn');
-            closeBtn.addEventListener('click', () => {
-                modal.remove();
-            });
-
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.remove();
-                }
-            });
-
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal) {
-                    modal.remove();
-                }
-            });
+        const closeBtn = modal.querySelector('.close-btn');
+        closeBtn.addEventListener('click', () => {
+            modal.remove();
         });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.remove();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal) {
+                modal.remove();
+            }
+        });
+    });
     }
 }
 
