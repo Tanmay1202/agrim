@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.theagrim.com/sitemap.xml
+
+# Disallow admin or private areas if you add them in the future
+Disallow: /admin/
+Disallow: /private/ 
