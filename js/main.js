@@ -57,6 +57,15 @@ const serviceDetails = [
         ]
     },
     {
+        title: 'Custom Software Development',
+        description: 'We specialize in developing custom software solutions that are tailored to your unique business requirements. Our team works closely with you to design, develop, and deploy software that enhances productivity, integrates seamlessly with your existing systems, and scales with your growth.',
+        benefits: [
+            'Software designed specifically for your business processes.',
+            'Seamless integration with your current tools and platforms.',
+            'Dedicated support and updates to ensure long-term success.'
+        ]
+    },
+    {
         title: 'IoT Solutions',
         description: 'Unlock the power of connected devices with our IoT solutions. We help you collect, analyze, and act on real-time data to optimize operations, improve efficiency, and drive innovation.',
         benefits: [
@@ -64,15 +73,6 @@ const serviceDetails = [
             'Real-time data collection and actionable insights.',
             'Enhanced operational efficiency and automation.',
             'Scalable solutions for manufacturing, logistics, smart offices, and more.'
-        ]
-    },
-    {
-        title: 'Custom Software Development',
-        description: 'We specialize in developing custom software solutions that are tailored to your unique business requirements. Our team works closely with you to design, develop, and deploy software that enhances productivity, integrates seamlessly with your existing systems, and scales with your growth.',
-        benefits: [
-            'Software designed specifically for your business processes.',
-            'Seamless integration with your current tools and platforms.',
-            'Dedicated support and updates to ensure long-term success.'
         ]
     }
 ];
